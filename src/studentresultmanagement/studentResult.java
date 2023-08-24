@@ -268,7 +268,7 @@ public class studentResult extends javax.swing.JFrame {
             
             Statement st=con.createStatement();
             
-            ResultSet rs=st.executeQuery("select * from Student inner join Result  where Student.RollNumber='"+RollNumber+"' and Result.RollNumber='"+RollNumber+"'");
+            ResultSet rs=st.executeQuery("select * from Student Inner join Result  where Student.RollNumber='"+RollNumber+"' and Result.RollNumber='"+RollNumber+"'");
             
             if(rs.next()){
                 jTextField1.setText(rs.getString(2));

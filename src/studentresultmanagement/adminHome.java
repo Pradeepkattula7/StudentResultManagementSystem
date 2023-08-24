@@ -278,7 +278,7 @@ public class adminHome extends javax.swing.JFrame {
             
             Statement st=con.createStatement();
             
-            st.executeUpdate("insert in to Student(RollNumber,CourseName,BranchName,StudentName,Gender,FatherName) value('"+roll+"','"+course+"','"+branch+"','"+name+"','"+gender+"','"+fname+"')");
+            st.executeUpdate("Insert into Student(RollNumber,CourseName,BranchName,StudentName,Gender,FatherName) value('"+roll+"','"+course+"','"+branch+"','"+name+"','"+gender+"','"+fname+"')");
             JOptionPane.showMessageDialog(null,"Data Saved SuccesFully");
             setVisible(false);
             new adminHome().setVisible(true);
